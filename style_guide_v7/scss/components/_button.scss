@@ -1,0 +1,30 @@
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: $navbtn-color;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.default {
+  background-color: $secondary-color;
+}
+
+.error {
+  background-color: $errortheme-color;
+}
+
+.info {
+  background-color: #927bc1;
+}
+
+.success {
+  background-color: $successtheme-color;
+}
+
+.warning {
+  background-color: #fd7856;
+}
