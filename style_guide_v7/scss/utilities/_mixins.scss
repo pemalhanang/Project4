@@ -1,4 +1,4 @@
-@mixin images: {
+@mixin images {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -7,7 +7,7 @@
   
 }
 
-@mixn containerc: {
+@mixin containerc {
     display: block;
     margin-left: auto;
     margin-right: auto;
