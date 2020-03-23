@@ -48,111 +48,6 @@ a {
   max-width: 100%;
 }
 
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
-@media (min-width: 768px) {
-  /* line 41, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
-  }
-  /* line 48, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 52, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .row {
-    flex-direction: row;
-  }
-  /* line 56, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-  /* line 63, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  /* line 67, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-  /* line 71, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-  /* line 75, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-3 {
-    flex-basis: 25.00%;
-  }
-  /* line 79, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-  /* line 83, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-  /* line 87, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-6 {
-    flex-basis: 50.00%;
-  }
-  /* line 91, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-  /* line 95, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-  /* line 99, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-9 {
-    flex-basis: 75.00%;
-  }
-  /* line 103, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-  /* line 107, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-  /* line 111, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .col-12 {
-    flex-basis: 100%;
-  }
-  /* line 115, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* line 121, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .nav-link {
-    flex-basis: 100px;
-  }
-  /* line 125, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .btn {
-    padding: 10px 30px;
-  }
-  /* line 129, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .btn + .btn {
-    margin-left: 10px;
-  }
-  /* line 133, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_base.scss */
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
-}
-
 /* line 3, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/base/_typography.scss */
 .headline-primary {
   color: #58e1c1;
@@ -555,6 +450,91 @@ template {
   display: none;
 }
 
+/* line 2, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_navigation.scss */
+.nav {
+  padding-left: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 9, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_navigation.scss */
+.nav-link {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  transition: background-color .2s ease-in-out,  color .2s ease-in-out;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_navigation.scss */
+.nav-link:hover {
+  color: #fff;
+  background-color: #58e1c1;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
+.default {
+  background-color: #51ddfc;
+}
+
+/* line 16, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
+.error {
+  background-color: #e4757a;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
+.info {
+  background-color: #927bc1;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
+.success {
+  background-color: #63cc82;
+}
+
+/* line 28, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
+.warning {
+  background-color: #fd7856;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_form.scss */
+.form {
+  flex-basis: 100%;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_form.scss */
+.input {
+  display: block;
+  width: 94%;
+  margin: 10px auto 0;
+  border: none;
+  padding: 10px;
+  border-bottom: 5px solid #58e1c1;
+}
+
+/* line 14, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_form.scss */
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* line 1, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
 .container {
   padding: 0 10px;
@@ -641,89 +621,109 @@ template {
   flex-basis: 100%;
 }
 
-/* line 2, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_navigation.scss */
-.nav {
-  padding-left: 0;
-  flex-basis: 100%;
-  display: flex;
-  flex-direction: column;
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 768px) {
+  /* line 76, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+  }
+  /* line 83, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 87, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .row {
+    flex-direction: row;
+  }
+  /* line 91, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  /* line 98, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  /* line 102, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  /* line 106, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-2 {
+    flex-basis: 16.67%;
+  }
+  /* line 110, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-3 {
+    flex-basis: 25.00%;
+  }
+  /* line 114, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  /* line 118, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-5 {
+    flex-basis: 41.67%;
+  }
+  /* line 122, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-6 {
+    flex-basis: 50.00%;
+  }
+  /* line 126, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  /* line 130, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+  /* line 134, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-9 {
+    flex-basis: 75.00%;
+  }
+  /* line 138, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  /* line 142, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-11 {
+    flex-basis: 91.67%;
+  }
+  /* line 146, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .col-12 {
+    flex-basis: 100%;
+  }
+  /* line 150, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* line 156, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .nav-link {
+    flex-basis: 100px;
+  }
+  /* line 160, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .btn {
+    padding: 10px 30px;
+  }
+  /* line 164, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  /* line 168, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_grid.scss */
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
-/* line 9, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_navigation.scss */
-.nav-link {
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 0;
-  display: block;
-  width: 100%;
-  transition: background-color .2s ease-in-out,  color .2s ease-in-out;
-}
-
-/* line 20, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_navigation.scss */
-.nav-link:hover {
-  color: #fff;
-  background-color: #58e1c1;
-}
-
-/* line 2, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
-.btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-/* line 12, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
-.default {
-  background-color: #51ddfc;
-}
-
-/* line 16, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
-.error {
-  background-color: #e4757a;
-}
-
-/* line 20, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
-.info {
-  background-color: #927bc1;
-}
-
-/* line 24, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
-.success {
-  background-color: #63cc82;
-}
-
-/* line 28, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_button.scss */
-.warning {
-  background-color: #fd7856;
-}
-
-/* line 1, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_form.scss */
-.form {
-  flex-basis: 100%;
-}
-
-/* line 5, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_form.scss */
-.input {
-  display: block;
-  width: 94%;
-  margin: 10px auto 0;
-  border: none;
-  padding: 10px;
-  border-bottom: 5px solid #58e1c1;
-}
-
-/* line 14, ../../../../../../../../../../../../../Users/pemalhanang/Documents/style_guide_v7/scss/components/_form.scss */
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
