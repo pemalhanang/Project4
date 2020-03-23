@@ -1,0 +1,36 @@
+
+* {
+  font-family: $font-stack;
+  color: #777;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img-avatar {
+  @include images; 
+  max-height: 100%;
+}
+
+.img-frame {
+  @include images; 
+  padding: 13px;
+  border: 1px solid #ccc;
+}
+
+.img-logo {
+  @include images;
+}
+
+
+
